@@ -23,11 +23,11 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<span style="height:4.6em;width:4.6em;display:inline-flex;align-items:center;justify-content:center;border-radius:50%">
-						<img src="img/amp_logo.png" alt="" width="100%">
+					<span style="height:4.6em;width:4.6em;display:inline-flex;align-items:center;justify-content:center;border-radius:50%"><img src="img/amp_logo.png" alt="" width="100%">
 					</span>
 
 					<h1 style="margin-bottom:60px;font-size:50px;letter-spacing:normal">AMP<br><span style="font-size:30px">Accelerated Mobile Pages</span></h1>
+
 					<p>2019. 1. 16</p>
 					<p>IT 개발2팀 UI파트 - 김재호</p>
 				</section>
@@ -41,7 +41,6 @@
 					</ul>
 				</section>
 
-
 				<section>
 					<section>
 						<h2>AMP 배경</h2>
@@ -52,7 +51,6 @@
 						<!-- <p>스마트폰의 성능은 꾸준히 좋아지고 있지만,<br>저전력 CPU와 메모리의 한계 그리고 제한된 스토리지 등 PC를 대체하기에는 어려움이 따름</p> -->
 						<!-- <div style="display:inline-block;vertical-align:middle;"><img src="img/amp_loading.png" width="65%" alt=""></div> -->
 						<div style="display:inline-block;vertical-align:middle;"><img src="img/amp_loading3.jpeg" width="50%" alt=""></div>
-
 
 						<p>Google은 검색 결과에서 링크를 클릭하는 사용자 <a href="https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/" target="_blank">분석 결과</a>에 따르면</p>
 
@@ -66,10 +64,10 @@
 
 					<section>
 						<h2>속도의 영향</h2>
-						<p>웹에서 속도는 중요</p>
-						<p>전자상거래 사이트가 하루에 10만 달러를 벌고 있다면,<br>1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. <a href="https://neilpatel.com/blog/loading-time/" target="_blank">(참고)</a></p>
+						<p>웹에서 속도는 중요<br>페이지 로드 시간이 수익에 직접적인 영향을 미칠 수 있음</p>
+
 						<div style="display:inline-block;vertical-align:middle;"><img src="img/mobile-page-speed.png" width="60%" alt=""></div>
-						<p>페이지 로드 시간이 수익에 직접적인 영향을 미칠 수 있음</p>
+						<p>전자상거래 사이트가 하루에 10만 달러를 벌고 있다면,<br>1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. <a href="https://neilpatel.com/blog/loading-time/" target="_blank">(참고)</a></p>
 					</section>
 
 
@@ -82,12 +80,12 @@
 						웹 폰트를 다운로드할 때 브라우저를 차단하는 어떠한 HTTP 요청도 발생하지 않게 한다.
 						 -->
 						<ul>
-							<li>웹페이지 용량 - 큰 사이즈 이미지, 동영상, 복잡한 코드와 디자인</li>
-							<li>리소스 로딩 -  리소스가 로드되는 순서</li>
-							<li>HTTP 요청 수 - CSS와 이미지를 적절히 요약, 외부 리소스 더 적게 포함</li>
-							<li>느린 JavaScript 실행 - 플러그인, SNS 위젯</li>
-							<li>웹 폰트 - 용량이 매우 크기 때문에 웹 페이지 성능에 큰 영향을 미침</li>
-							<li>광고 - 지나치게 많은 광고</li>
+							<li>웹 페이지 용량: 큰 사이즈 이미지, 동영상, 복잡한 코드와 디자인</li>
+							<!-- <li>리소스 로딩:  리소스가 로드되는 순서</li> -->
+							<li>HTTP 요청 수: CSS와 이미지를 적절히 요약, 외부 리소스 더 적게 포함</li>
+							<li>느린 JavaScript 실행: 플러그인, SNS 위젯</li>
+							<li>웹 폰트: 용량이 매우 크기 때문에 성능에 큰 영향을 미침</li>
+							<li>광고: 지나치게 많은 광고</li>
 							<!-- <li>DOM 생성을 차단, 페이지 렌더링 지연</li> -->
 						</ul>
 					</section>
@@ -125,19 +123,26 @@
 
 					<section>
 						<h2>AMP</h2>
-						<p>페이지 로딩 시간 단축<br>긴 로딩 시간이 불러오는 사용자 이탈을 막고 더 나은 컨텐츠 소비 경험 제공</p>
+						<!-- <p>페이지 로딩 시간 단축</p> -->
+						<p>긴 로딩 시간이 불러오는 사용자 이탈을 막고<br>더 나은 컨텐츠 소비 경험 제공</p>
 						<!-- <div><img src="img/amp_index.png" alt="" width="50%"></div> -->
 						<!-- <p>모바일 환경이 빠르게 발전하고 있음에도<br>컨텐츠가 보여지는 속도는 아직 느리다는걸 해결하고자 만든 프로젝트</p> -->
 						<ul>
 							<li>Accelerated Mobile Pages (AMP)</li>
 							<!-- <li>컨텐츠를 신속하게 제공하도록 설계된 성능 최적화된 HTML, JavaScript 프레임워크</li> -->
 							<!-- <li>AMP를 활용하면 모바일웹 및 앱에서 간편하게 콘텐츠를 빠르게 로드</li> -->
-							<li>웹 페이지를 즉시 로드, 컨텐츠를 빠르게 표시하는 것을 목적</li>
+							<li>웹 페이지를 즉시 로드, 컨텐츠를 빠르게 표시하는 것이 목적</li>
 							<li>2015년 10월 Google에서 시작한 오픈소스 프로젝트</li>
 							<li>2016년 2월 부터 Google 모바일 검색 결과에 적용 (1초 이내 로드)</li>
 							<li>초기 AMP는 뉴스 형태의 콘텐츠에 중점 -> 계속 확장 (전자상거래, 이메일용 AMP)</li>
 						</ul>
 					</section>
+
+
+					<section>
+						<div><img src="img/amp_ex.gif" alt="" width="30%"></div>
+					</section>
+
 
 					<section>
 						<h2>주요 구성 요소</h2>
@@ -155,10 +160,10 @@
 						<ul>
 							<li>HTML5 기반으로 AMP 콘텐츠를 작성</li>
 							<!-- <li>웹 브라우저에서 즉시 실행</li> -->
-							<li>하지만 빠른 성능을 위해 사용할 수 있는 HTML 태그 제한</li>
-							<li>대신 AMP 컴포넌트 (사용자 정의 태그) 제공 &lt;img&gt; → &lt;amp-img&gt;</li>
+							<li>빠른 성능을 위해 사용할 수 있는 HTML 태그 제한</li>
+							<li>대신 AMP 컴포넌트 (사용자 정의 태그) 제공</li>
 							<li>초기 학습 비용이 부과</li>
-							<li>기획자, 디자이너 커뮤니케이션 비용</li>
+							<!-- <li>기획자, 디자이너 커뮤니케이션 비용</li> -->
 							<li>AMP HTML 구문 유효성 검사 반드시 체크</li>
 							<li>오류가 있는 경우 Google은 AMP 페이지를 인식하지 못함</li>
 							<li>출시 전, 배포 이후 인식되고 있는지 확인 필요 (<a href="https://search.google.com/search-console/amp" target="_blank">Google Search Console</a>)</li>
@@ -170,11 +175,11 @@
 					<section>
 						<h2>AMP JS</h2>
 						<ul>
-							<li>AMP 페이지에서 사용자 작성 스크립트가 허용되지 않음</li>
-							<li>AMP 페이지에서 사용 할 수 있는 JS 라이브러리가 제공</li>
+							<li>사용자 작성 스크립트가 허용되지 않음</li>
+							<li>AMP JS 기본 라이브러리 제공</li>
 							<li>모든 JS는 비동기 방식으로 실행, 페이지 로딩에 영향을 미치지 않음</li>
-							<li>페이지 동작과 관련된 부분은 커스텀 AMP요소를 통해 구현</li>
-							<li>Iframe안에 별도로 외부 JS라이브러리를 포함 가능</li>
+							<li>페이지 동작과 관련된 부분은 커스텀 AMP 컴포넌트를 통해 구현</li>
+							<li>Iframe안 별도로 외부 JS라이브러리 포함 가능</li>
 							<li>빠른 렌더링을 위해 엄격한 엄격한 웹 성능 모범 사례를 따름</li>
 							<!-- <li>AMP HTML 페이지의 빠른 렌더링을 보장</li> -->
 						</ul>
@@ -187,10 +192,11 @@
 						<div style="width:70%;margin:40px auto;background:#fff"><img src="img/amp_cache.png"  alt=""></div>
 						<ul>
 							<!-- <li>AMP 페이지가 즉시 렌더링 될 수 있도록 AMP 페이지를 캐싱 하기 위한 CDN</li> -->
-							<li>AMP 기술을 적용한 페이지는 무료로 Google CDN 서버에 캐싱하는 방식으로 운영</li>
-							<li>AMP 페이지도 빠르지만 AMP Cache로 AMP 페이지를 즉시 로드</li>
+							<!-- <li>오직 유효한 AMP 문서들을 제공하기 위한 프록시 기반 CDN</li> -->
+							<li>AMP 기술을 적용한 페이지는 무료 Google CDN 서버에 캐싱하는 방식으로 운영</li>
+							<li>AMP 페이지도 빠르지만 AMP Cache로 즉시 로드</li>
 							<li>Google 검색 결과에서 링크 클릭시 실제 사이트로 연결시켜주는 것이 아니라<br>미리 캐싱한 데이터를 보여줌으로써 로드 시간 개선</li>
-							<li>오직 유효한 AMP 문서들을 제공하기 위한 프록시 기반 CDN</li>
+
 							<!-- <li>AMP의 규칙을 적용한 AMP HTML, AMP JS를 사용해 제작된 웹 페이지는 Google AMP Cache에 저장</li> -->
 							<!-- <li>무료 Google CDN에서 캐시되고 제공</li> -->
 							<!-- <li>웹 페이지의 모든 JavaScript, 이미지 파일을 같은 출처에서 로드</li> -->
@@ -201,14 +207,14 @@
 					<section>
 						<h2>AMP 성능 개선 방법</h2>
 						<ul>
-							<li>모든 JS는 비동기로 처리 Non-blocking (사용자 JS 허용 안됨)</li>
-							<li>모든 리소스(이미지, 동영상) 크기를 정적으로 지정</li>
+							<li>모든 JS는 비동기로 처리 Non-blocking</li>
+							<li>모든 리소스 (이미지, 동영상) 크기를 정적으로 지정</li>
 							<li>리소스의 다운로드를 기다리지 않고 페이지 레이아웃 위치 ​​계산</li>
-							<li>인라인 CSS만 허용, 크기를 50KB 제한</li>
+							<li>인라인 CSS만 허용, 크기 50KB 제한</li>
 							<li>외부 리소스를 기다리지 않고 바로 렌더링 시작</li>
 							<!-- <li>CSS는 * 셀렉터, filter, !important 속성 제한</li> -->
+							<!-- <li>GPU가 효과를 처리 할 수 없는 경우 브라우저가 대신 계산을 수행 페이지 렌더링 속도 저하</li> -->
 							<li>GPU 가속 애니메이션만 실행</li>
-							<li>GPU가 효과를 처리 할 수 없는 경우 브라우저가 대신 계산을 수행 페이지 렌더링 속도 저하</li>
 							<li>화면에서 보이는 부분, 사용자가 볼 가능성이 있는 리소스 로드 우선순위 지정</li>
 							<li>백그라운드에서 웹 페이지 사전 렌더링</li>
 						</ul>
@@ -224,31 +230,29 @@
 
 					<section>
 						<h2>AMP 사전 렌더링</h2>
+						<p>사용자가 방문 전 AMP 뷰어를 통해<br>백그라운드에서 AMP 페이지를 다운로드하고 AMP 캐시에 저장</p>
+						<p>사전 렌더링된 AMP 링크 클릭 시, AMP 뷰어에 즉시 표시 가능</p>
 						<div><img src="img/amp_viewer.png" alt="" width="70%"></div>
-						<p>사용자가 방문 전 AMP 뷰어를 (숨겨진 iframe) 통해<br>백그라운드에서 AMP 페이지를 다운로드하고 AMP 캐시에 저장</p>
-						<p>사전 렌더링된 AMP 링크 클릭 시 완전히 로드되고 AMP 뷰어에 즉시 표시 가능</p>
 						<!-- <ul>
 							<li>AMP-HTML, AMP-JS 사용하면 빠른 웹페이지 제작</li>
 							<li>사전 렌더링을 사용하면 즉시 페이지를 볼 수 있음</li>
 						</ul> -->
 					</section>
 
-
-
 					<section>
-						<h2>AMP 논란과 비판</h2>
+						<h2>AMP 논란</h2>
 						<ul>
-							<li>AMP Cache는 Google이 소유하고 운영 원래 URL이 아니라 대신 Google 도메인에서 제공</li>
-							<li>Google URL을 사용하면 브랜드가 희석</li>
+							<!-- <li>AMP Cache는 Google이 소유하고 원래 URL이 아니라 Google 도메인 제공</li> -->
+							<li>AMP Cache는 Google이 소유하고 운영, Google URL 사용으로 브랜드가 희석</li>
 							<li>사이트 입장에서는 사용자 정보도 알 수 없고 트래픽도 발생되지 않음</li>
-							<li>사용자가 구글 사이트를 떠나지 못하게 잡아두겠다는 의미로 해석</li>
+							<!-- <li>사용자가 구글 사이트를 떠나지 못하게 잡아두겠다는 의미로 해석</li> -->
 							<li>Google은 검색 결과에서 AMP 페이지를 특별하게 취급</li>
 							<li>중앙 집중식 JavaScript</li>
-							<li>모든 AMP 페이지에는 AMP-JS 라이브러리가 포함</li>
+							<!-- <li>모든 AMP 페이지에는 AMP-JS 라이브러리가 포함</li> -->
 							<li>라이브러리를 사용할 수 없거나 손상된 경우 모든 AMP 사이트에 문제 발생</li>
-							<li>AMP가 W3C 표준은 아니라는 점 새로운 웹표준 - 유효한 HTML로 간주되는 표준을 수정</li>
+							<li>W3C 표준은 아니라는 점, 새로운 웹표준?!</li>
 							<li>실제 AMP 페이지를 Google을 통하지 않고 접속해 보면 다른 웹페이지와 별반 차이가 크게 없음</li>
-							<li>AMP가 해주는 게 아니라 구글이 검색을 가지고 있기에 가능한 부분</li>
+							<li>AMP보다 구글이 검색을 가지고 있기에 가능한 부분</li>
 							<li>브라우저 지원 범위</li>
 						</ul>
 					</section>
@@ -257,12 +261,11 @@
 						<h2>AMP == SEO</h2>
 						<div><img src="img/amp_search.png" alt="" width="60%"></div>
 						<ul>
-							<li>구글은 모바일 페이지 속도 순위 요소에 우선 순위를 정할 것이라고 발표</li>
-							<li>Google은 모바일 우선 순위 색인에서 페이지 속도를 순위 요소로 사용</li>
-							<li>기존의 검색 알고리즘을 그대로 적용할 것이며 AMP를 적용한 언론과 적용하지 않은 언론 사이의 차별은 존재하지 않을 것이라는 입장</li>
-							<li>Google 검색 결과 페이지에 AMP 번개 아이콘(⚡)으로 식별</li>
-							<li>AMP Top Stories 구글 검색 결과 상단 노출 검색 결과에서도 상위 노출</li>
-							<li>모바일 검색 결과에서 AMP 페이지는 검색 상단 Top Stories에 나타납니다.</li>
+							<!-- <li>기존의 검색 알고리즘을 그대로 적용, AMP를 적용한 언론과 적용하지 않은 언론 사이의 차별은 존재하지 않을 것이라는 입장</li> -->
+							<li>Google 검색결과 페이지에 AMP 번개 아이콘(⚡)으로 식별</li>
+							<li>AMP 페이지는 검색 상단 Top Stories 영역에 노출</li>
+							<li>Google은 모바일 검색 우선 순위에서 페이지 속도를 순위에 반영</li>
+							<!-- <li>모바일 검색 결과에서 AMP 페이지는 검색 상단 Top Stories에 나타납니다.</li> -->
 						</ul>
 					</section>
 
@@ -301,8 +304,9 @@
 						<h2>AMP 유효성 검사</h2>
 						<ul>
 							<li>유효성 검사기가 AMP-JS 라이브러리에 포함</li>
-							<li>브라우저에서 해당 페이지를 열고 URL 마직막에 추가 #development=1</li>
-							<li>개발자도구 콘솔탭 유효성 검사 관련 내용 출력 <a href="https://validator.ampproject.org/">온라인 AMP 유효성 검사</a></li>
+							<li>해당 페이지를 열고 URL 마직막에 추가 <strong style="color:#13DAEC">#development=1</strong></li>
+							<li>개발자도구 콘솔탭 유효성 검사 관련 내용 출력</li>
+							<li><a href="https://validator.ampproject.org/">온라인 AMP 유효성 검사</a></li>
 						</ul>
 						<pre><code class="html">
 http://localhost/amp_demo.html#development=1
@@ -344,11 +348,12 @@ http://localhost/amp_demo.html#development=1
 						<!-- <p>기존 페이지와 AMP 페이지 관계를 검색 엔진에 명확하게 만드는 것이 중요</p> -->
 						<!-- 다음과 같이 link 태그를 이용해 -->
 
-
 						<pre><code class="html">
 기존 문서에는 amphtml 문서의 위치 지정
 <link rel="amphtml" href="https://www.example.com/amp-version.html" />
+                        </code></pre>
 
+						<pre><code class="html">
 AMP 문서에는 기존 문서로 링크 삽입
 <link rel="canonical" href="https://www.example.com/regular-html-version.html" />
                         </code></pre>
@@ -398,7 +403,7 @@ body {
 					<section>
 						<h2>AMP 사용자 정의 CSS 사용</h2>
 						<ul>
-							<li>빠른 로드하기 위해 외부 CSS를 포함할 수 없음</li>
+							<li>빠른 로드 위해 외부 CSS를 포함할 수 없음</li>
 							<li>&lt;head&gt;부분 하나의 사용자 정의 스타일만 허용</li>
 							<li>스타일 태그에 amp-custom 속성 추가</li>
 							<li>최대 크기는 50KB 미만</li>
@@ -510,15 +515,15 @@ body {
 
 
 					<section>
-						<h2>AMP-JS 라이브러리</h2>
+						<h2>AMP JS 라이브러리</h2>
 						<ul>
-							<li>AMP-JS 기본 라이브러리 페이지에 포함</li>
+							<li>AMP JS 기본 라이브러리를 페이지에 포함</li>
 							<li>모든 자바스크립트는 비동기식</li>
-							<li>스크립트 태그에 async 속성 추가</li>
+							<!-- <li>스크립트 태그에 async 속성 추가</li> -->
 							<li>모든 스크립트 태그는 주 렌더링을 차단하지 않도록 async 속성 추가</li>
-							<li>커스텀 스크립트 사용하는 경우 커스텀 태그를 지정</li>
+							<!-- <li>커스텀 스크립트 사용하는 경우 커스텀 태그를 지정</li> -->
 							<li>AMP HTML 태그를 브라우저가 이해하는 HTML로 변환</li>
-							<li>리소스 로드 우선 순위를 효율적으로 관리</li>
+							<!-- <li>리소스 로드 우선 순위를 효율적으로 관리</li> -->
 							<li>리소스를 로딩하기 전 모든 요소의 레이아웃을 미리 계산</li>
 							<li>유효성 검사 기능 포함</li>
 						</ul>
@@ -549,14 +554,10 @@ body {
                         </code></pre>
 					</section>
 
-
-
-
-
 					<section>
 						<h2>사용 할 수 없는 HTML 태그</h2>
-						<p>AMP는 금지 된 태그에 유사한 동작을 제공하지만 제한적이고 성능에 최적화 된 방식으로 대체 태그를 사용하여 HTML을 확장</p>
-						<p><br>base, frame, frameset, object, param, applet, embed</p>
+						<p>base, frame, frameset, object, param, applet, embed</p>
+						<p>AMP는 금지된 태그에 유사한 동작을 제공<br>성능에 최적화된 방식으로 대체 태그를 사용하여 HTML을 확장</p>
 						<table>
 							<colgroup>
 							<col style="width:50%">
@@ -593,15 +594,15 @@ body {
 					<section>
 						<h2>AMP 컴포넌트</h2>
 						<ul>
-							<li><strong>기본 (Built in/core)</strong>:
-							AMP-HTML 페이지에서 바로 사용
-							기본 AMP-JS 라이브러리 함께 포함된 일반적으로 사용되는 amp-img, amp-video 등의 구성요소</li>
-							<li><strong>확장</strong>:
-							기본 구성요소에 없는 기능이 확장된 구성요소
-							구성요소를 사용하기 전 head 부분에 양식 확장 JS 포함
+							<li><strong>기본 (Built in/core)</strong><br>
+							- AMP-HTML 페이지에서 바로 사용 가능<br>
+							- 기본 AMP-JS 라이브러리 함께 포함된 일반적으로 사용되는 amp-img, amp-video 등의 구성요소</li>
+							<li style="margin-top:30px"><strong>확장</strong><br>
+							- 기본 구성요소에 없는 기능이 확장된 구성요소<br>
+							- 구성요소를 사용하기 전 &lt;head&gt; 부분에 확장 JS 포함
 							</li>
-
-							<li><strong><a href="experimental.html" target="_blank">실험용</a></strong>: 이미 출시되었지만 아직 폭넓게 사용할 수 없는 구성요소 (유효성 검증X)</li>
+							<li style="margin-top:30px"><strong><a href="experimental.html" target="_blank">실험용</a></strong><br>
+							- 이미 출시되었지만 아직 폭넓게 사용할 수 없는 구성요소 (유효성 검증X)</li>
 						</ul>
 					</section>
 
@@ -660,7 +661,7 @@ body {
 							<li>layout, width, height, sizes, heights 속성을 통해<br>요소의 크기 및 레이아웃 조정</li>
 							<li>CSS 제한(50KB)을 고려할 때 레이아웃 속성은 매우 유용</li>
 						</ul>
-						<div style="margin-top:20px;background:#fff"><img src="img/amp_layout_system.png" alt="" width="70%"></div>
+						<div style="margin-top:30px;background:#fff"><img src="img/amp_layout_system.png" alt="" width="60%"></div>
 					</section>
 
 
