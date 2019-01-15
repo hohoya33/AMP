@@ -247,16 +247,15 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #13DAEC;
+  color: #fff;
+  border-bottom:2px solid #fff;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #71e9f4;
-  text-shadow: none;
-  border: none; }
+  text-shadow: none; }
 
 .reveal .roll span:after {
   color: #fff;
