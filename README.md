@@ -6,25 +6,21 @@ AMP | Accelerated Mobile Pages 자료 정리
 - AMP 문서 살펴보기
 
 # AMP 배경
+
 ## 배경
 <img src="img/amp_loading3.jpeg" width="50%" alt="">
-Google은 검색 결과에서 링크를 클릭하는 사용자 [분석 결과](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)에 따르면 
 
+Google은 검색 결과에서 링크를 클릭하는 사용자 분석 결과에 따르면 [참고](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 - 로드 시간이 3초이상 걸리면 모바일 사이트 방문 포기 → 약 53%
 - 로드 시간이 1초 ~ 10초 길어지면 이탈률 → 123% 증가
 
 ## 속도의 영향
-웹에서 속도는 중요
-페이지 로드 시간이 수익에 직접적인 영향을 미칠 수 있음
-
+- 웹에서 속도는 중요
+- 페이지 로드 시간이 수익에 직접적인 영향을 미칠 수 있음
 <img src="img/mobile-page-speed.png" width="60%" alt="">
 
-전자상거래 사이트가 하루에 10만 달러를 벌고 있다면,
-1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. [참고](https://neilpatel.com/blog/loading-time/)
-
-전환율 (conversion rate)
-웹 사이트 방문자가 제품 구매, 회원 가입,등 웹 사이트가 의도하는 행동을 취하는 비율
-
+전자상거래 사이트가 하루에 10만 달러를 벌고 있다면, 1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. [참고](https://neilpatel.com/blog/loading-time/)
+* 전환율 (conversion rate): 웹 사이트 방문자가 제품 구매, 회원 가입,등 웹 사이트가 의도하는 행동을 취하는 비율.
 이탈률은 매출과 연결된다. 고객 이탈률이 줄어들면 구매전환율이 올라간다. 
 고객 이탈률이 높아지면 구매전환율은 낮아진다. 
 
@@ -128,10 +124,8 @@ Google 검색 결과에서 AMP로 구현된 모든 페이지는 AMP Viewer를 �
 - 브라우저 지원 범위
 
 ## AMP == SEO
-Google 검색 결과 우대
-
 <img src="img/amp_search.png" alt="" width="60%">
-
+- Google 검색 결과 우대
 - Google 검색결과 페이지에 AMP 번개 아이콘(⚡)으로 식별
 - AMP 페이지는 검색 상단 Top Stories 영역에 노출
 - Google은 모바일 검색결과 우선 순위 조건에서 페이지 속도를 순위에 반영
@@ -311,7 +305,7 @@ body {
 - 웹 페이지 정보를 검색엔진이 더 정확하게 분석할 수 있도록 구조화된 데이터 추가
 - Google 검색 결과에서 Top Stories Carousel 미리보기 생성 [메타 데이터 샘플](https://github.com/ampproject/amphtml/tree/master/examples/metadata-examples)
 
-<img src="img/amp_top_stories.png" alt="" width="80%">
+<img src="img/amp_top_stories.png" alt="" width="30%">
 
 ```html
 <script type="application/ld+json">
@@ -361,17 +355,14 @@ body {
     </tbody>
 </table>
 
-
 ## AMP 컴포넌트
 - 기본 (Built in/core): AMP HTML 페이지에서 바로 사용가능
 - 확장: 기본 구성요소에 없는 기능이 확장된 구성요소
 - 실험용: 이미 출시되었지만 유효성 검증이 되지 않은 구성요소
 
-
 ## 기본 컴포넌트
 - AMP JS 라이브러리에 기본 포함
 - 일반적으로 빈번히 사용되는 amp-img, amp-video 등의 구성요소
-
 
 ## amp-img
 - AMP는 HTML img 태그를 사용할 수 없음
@@ -383,7 +374,6 @@ body {
 <amp-img src="sample.jpg" width="700" height="300" alt=""></amp-img>
 ```
 
-
 ## AMP 레이아웃 시스템
 페이지 레이아웃을 가능한 빠르게 파악하고, DOM 리플로우를 줄이기 위한 핵심 요소
 
@@ -391,7 +381,7 @@ body {
 - layout, width, height, sizes, heights 속성을 통해 요소 크기, 레이아웃 설정
 - CSS 제한(50KB)을 고려할 때 레이아웃 속성은 매우 유용
 
-<img src="img/amp_layout_system.png" alt="" width="60%">
+<img src="img/amp_layout_system.png" alt="" width="70%">
 
 
 ## 레이아웃 속성
@@ -466,11 +456,9 @@ body {
 - slides (한번에 하나의 슬라이드만 동)
 - controls, loop, autoplay, delay
 
-### head 부분에 amp-carousel 추가
 ```html
 <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
 ```
-### amp-carousel 태그 사용해 간편하게 슬라이드 구현
 ```html
 <amp-carousel type="slides" controls loop autoplay delay="3000" width="400" height="300">
     <amp-img src="/img/image1.jpg" width="400" height="300" alt=""></amp-img>
@@ -485,7 +473,6 @@ body {
 - side="right" 사이드바를 페이지 오른쪽에 위치
 - AMP 페이지에 하나만 amp-sidebar 사용 가능
 
-### head 부분에 amp-sidebar 추가
 ```html
 <script async="" custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 ```
