@@ -182,7 +182,7 @@ AMP 문서로 선언하려면 페이지의 최상단 <html> 요소에 속성 필
 - AMP 문서와 기존 웹문서 간 공식 링크(canonical link)를 통해 서로 연결
 
 ### 기존 문서에는 amphtml 문서의 위치 지정
-<img src="img/apm_no_standalone.png" alt="" width="50%" style="background-color:#000">
+<img src="img/apm_no_standalone.png" alt="" width="50%">
 
 ```html
 <link rel="amphtml" href="https://www.example.com/amp-version.html">
@@ -195,7 +195,7 @@ AMP 문서로 선언하려면 페이지의 최상단 <html> 요소에 속성 필
 ## Standalone AMP
 - 하나의 AMP HTML로 문서를 만드는 방식 [AMP Start](https://www.ampstart.com/)
 - 기존 웹문서가 없는 경우 AMP 페이지 자신을 표준 버전으로 지정
-<img src="img/apm_standalone.png" alt="" width="15%" style="background-color:#000">
+<img src="img/apm_standalone.png" alt="" width="15%">
 
 ```html
 <link rel="canonical" href="https://www.example.com/amp-document.html">
