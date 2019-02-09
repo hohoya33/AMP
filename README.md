@@ -10,7 +10,7 @@ AMP | Accelerated Mobile Pages 자료 정리
 ## 배경
 <img src="img/amp_loading3.jpeg" width="50%" alt="">
 
-Google은 검색 결과에서 링크를 클릭하는 사용자 분석 결과에 따르면 [참고](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
+Google은 검색 결과에서 링크를 클릭하는 사용자 분석 결과에 따르면
 - 로드 시간이 3초이상 걸리면 모바일 사이트 방문 포기 → 약 53%
 - 로드 시간이 1초 ~ 10초 길어지면 이탈률 → 123% 증가
 
@@ -19,7 +19,7 @@ Google은 검색 결과에서 링크를 클릭하는 사용자 분석 결과에 
 - 페이지 로드 시간이 수익에 직접적인 영향을 미칠 수 있음
 <img src="img/mobile-page-speed.png" width="60%" alt="">
 
-전자상거래 사이트가 하루에 10만 달러를 벌고 있다면, 1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. [참고](https://neilpatel.com/blog/loading-time/)
+전자상거래 사이트가 하루에 10만 달러를 벌고 있다면, 1초 지연으로 인해 매년 250만 달러의 매출 손실이 발생할 가능성이 있다. [(참고)](https://neilpatel.com/blog/loading-time/)
 * 전환율 (conversion rate): 웹 사이트 방문자가 제품 구매, 회원 가입,등 웹 사이트가 의도하는 행동을 취하는 비율.
 이탈률은 매출과 연결된다. 고객 이탈률이 줄어들면 구매전환율이 올라간다. 
 고객 이탈률이 높아지면 구매전환율은 낮아진다. 
@@ -88,7 +88,7 @@ AMP가 모든 JavaScript를 비동기 방식으로 로딩하며 오직 내부 CS
 - 빠른 렌더링 보장을 위해 엄격한 웹 성능 모범 사례를 바탕으로 구현
 
 ## AMP Cache
-<img src="img/amp_cache.png" alt="">
+<img src="img/amp_cache.png" width="60%" alt="">
 
 - AMP 기술을 적용한 페이지는 무료 Google CDN 서버에 캐싱하는 방식으로 운영
 - AMP 페이지도 빠르지만 AMP Cache로 즉시 로드 가능
@@ -182,7 +182,7 @@ AMP 문서로 선언하려면 페이지의 최상단 <html> 요소에 속성 필
 - AMP 문서와 기존 웹문서 간 공식 링크(canonical link)를 통해 서로 연결
 
 ### 기존 문서에는 amphtml 문서의 위치 지정
-<img src="img/apm_no_standalone.png" alt="" width="50%">
+<img src="img/apm_no_standalone.png" alt="" width="50%" style="background-color:#000">
 
 ```html
 <link rel="amphtml" href="https://www.example.com/amp-version.html">
@@ -195,7 +195,7 @@ AMP 문서로 선언하려면 페이지의 최상단 <html> 요소에 속성 필
 ## Standalone AMP
 - 하나의 AMP HTML로 문서를 만드는 방식 [AMP Start](https://www.ampstart.com/)
 - 기존 웹문서가 없는 경우 AMP 페이지 자신을 표준 버전으로 지정
-<img src="img/apm_standalone.png" alt="" width="15%">
+<img src="img/apm_standalone.png" alt="" width="15%" style="background-color:#000">
 
 ```html
 <link rel="canonical" href="https://www.example.com/amp-document.html">
